@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#registerForm, #loginForm {
+    background: #ffffff;
+    padding: 50px;
+    padding-left: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+#registerForm h2, #loginForm h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group-inline {
+    display: flex;
+    gap: 40px;
+    margin-bottom: .5rem;
+}
+.form-group-inline .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+.form-group #registerBtn,#loginBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-group #registerBtn,#loginBtn,.save-btn:hover {
+    background-color: #45a049;
+    width: 100%;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    padding-right: 70px;
+}
+
+.header h2{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2.5rem;
+}
+
+.header button{
+    padding: .6rem 1.8rem;
+    margin: .2rem .2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.header button:hover{
+    background-color: #45a049;
+    color : white;
+}
+
+.header a:hover{
+    color : white;
+}
+
+.header a{
+    text-decoration: none;
+    color: #333;
+}
+
+.header .active{
+    background-color: #45a049;
+    color : white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left Section (Profile Info) */
+.profile-left {
+    width: 40%;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 3%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Right Section (Edit Info) */
+.profile-right {
+    width: 55%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #45a049;
+    background-color: #fff;
+}
+
+/* Save Button */
+.save-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #45a049;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-left, .profile-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+}
